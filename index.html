@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hartaj Singh Sandhu - QR Code Social Links</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #ff9933, #ffffff, #138808);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+
+        .qr-section {
+            margin-bottom: 30px;
+        }
+
+        .qr-code {
+            display: inline-block;
+            padding: 15px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .qr-code img {
+            width: 250px;
+            height: 250px;
+            display: block;
+        }
+
+        .social-links {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .social-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 15px;
+            border-radius: 12px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .social-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .instagram {
+            background: linear-gradient(45deg, #E1306C, #FCAF45);
+        }
+
+        .facebook {
+            background: #1877F2;
+        }
+
+        .twitter {
+            background: #000;
+        }
+
+        .linkedin {
+            background: #0077B5;
+        }
+
+        .youtube {
+            background: #FF0000;
+        }
+
+        .github {
+            background: #333;
+        }
+
+        .icon {
+            font-size: 18px;
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 12px;
+            color: #999;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+
+        .info-text {
+            background: #f5f5f5;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+            font-size: 13px;
+            color: #555;
+        }
+
+        @media (max-width: 500px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 22px;
+            }
+
+            .qr-code img {
+                width: 200px;
+                height: 200px;
+            }
+
+            .social-links {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hartaj Singh Sandhu</h1>
+        <p class="subtitle">Youth Congress, Sri Ganganagar</p>
+
+        <div class="qr-section">
+            <p style="color: #666; margin-bottom: 15px; font-size: 14px;">📱 Scan QR Code</p>
+            <div class="qr-code">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=https://hartajsinghsandhu.github.io/qr-social-links/" alt="QR Code">
+            </div>
+            <div class="info-text">
+                📲 Scan this QR code to access all my social media accounts
+            </div>
+        </div>
+
+        <div class="social-links">
+            <a href="https://www.instagram.com/hartajsinghsandhu_iyc?igsh=OXFkYWJlOHpxM3Yz" class="social-btn instagram" target="_blank">
+                <span class="icon">📷</span> Instagram
+            </a>
+            <a href="https://www.facebook.com/share/19NFC5wWbK/" class="social-btn facebook" target="_blank">
+                <span class="icon">👍</span> Facebook
+            </a>
+            <a href="https://x.com/HartajSinghIYC" class="social-btn twitter" target="_blank">
+                <span class="icon">𝕏</span> Twitter
+            </a>
+            <a href="https://www.linkedin.com/in/hartaj-singh-sandhu" class="social-btn linkedin" target="_blank">
+                <span class="icon">💼</span> LinkedIn
+            </a>
+        </div>
+
+        <div class="footer">
+            Made with ❤️ | Hartaj Singh Sandhu
+        </div>
+    </div>
+</body>
+</html>
